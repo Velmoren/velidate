@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Validate form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center pt-5">
+            <div class=" col-10 col-sm-10 col-md-7 col-lg-5">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputName1">User name</label>
+                        <input type="text" name="username" class="form-control" id="exampleInputName1"
+                            aria-describedby="emailHelp">
+                        <div class="errors" style="height: 20px; color: red"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <div class="errors" style="height: 20px; color: red"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" name="password" class="form-control formPass" id="exampleInputPassword1">
+                        <div class="errors" style="height: 20px; color: red"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPasswordConfirmation1">Password confirmation</label>
+                        <input type="password" name="passwordConfirmation" class="form-control formPassConf"
+                            id="exampleInputPasswordConfirmation1">
+                        <div class="errors" style="height: 20px; color: red"></div>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Согласие с условиями</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
